@@ -1,63 +1,19 @@
-<!-- @dsCard group="Forms" height=260 subtitle="Text fields at rest, focused and in error, with a select" -->
+<!-- @dsCard group="Forms" height=330 subtitle="The appointment request form fields: text, tel, email, selects and a textarea, with an error state" -->
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Input preview</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
-<style>
-  body { margin: 0; font-family: var(--font-sans); color: var(--ink); background: var(--canvas); }
-  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); padding: var(--space-6); }
-  .field { display: flex; flex-direction: column; gap: var(--space-2); }
-  label { font: 500 15px/1.4 var(--font-sans); color: var(--ink); }
-  label em { font-style: normal; color: var(--mute); font-weight: 400; }
-  .control { height: 48px; padding: 0 14px; border: 1.5px solid var(--hairline); border-radius: var(--radius-sm); background: var(--canvas); color: var(--ink); font: 400 16px/1.55 var(--font-sans); width: 100%; box-sizing: border-box; transition: border-color 120ms cubic-bezier(0.2,0,0,1), box-shadow 120ms cubic-bezier(0.2,0,0,1); }
-  .control::placeholder { color: var(--mute); }
-  .control:focus, .control.is-focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px var(--mist); }
-  .field.error .control { border-color: var(--error); }
-  .help { font: 400 14px/1.45 var(--font-sans); color: var(--mute); }
-  .field.error .help { color: var(--error); }
-  select.control { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--slate) 50%), linear-gradient(135deg, var(--slate) 50%, transparent 50%); background-position: calc(100% - 20px) 21px, calc(100% - 15px) 21px; background-size: 5px 5px; background-repeat: no-repeat; }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+<style> body::before { display: none; } body { background: var(--surface); padding: 24px; } </style>
 </head>
 <body>
-  <div class="grid">
-    <div class="field">
-      <label for="name">Full name</label>
-      <input class="control" id="name" placeholder="Maria Lopez">
-      <span class="help">As it appears on your insurance card</span>
-    </div>
-    <div class="field">
-      <label for="phone">Phone <em>(required)</em></label>
-      <input class="control is-focus" id="phone" value="916-" inputmode="tel">
-      <span class="help">We call to confirm your appointment</span>
-    </div>
-    <div class="field error">
-      <label for="email">Email</label>
-      <input class="control" id="email" value="maria@example" aria-invalid="true" aria-describedby="email-help">
-      <span class="help" id="email-help">Enter a full email address, like maria@example.com</span>
-    </div>
-    <div class="field">
-      <label for="office">Preferred office</label>
-      <select class="control" id="office">
-        <option>Sacramento, 4925 J Street</option>
-        <option>Folsom, 2160 E Bidwell Street</option>
-      </select>
-    </div>
-    <div class="field">
-      <label for="reason">Reason for visit</label>
-      <select class="control" id="reason">
-        <option>Routine eye exam</option>
-        <option>Cataract consultation</option>
-        <option>LASIK consultation</option>
-        <option>Glaucoma follow-up</option>
-      </select>
-    </div>
-    <div class="field">
-      <label for="insurance">Insurance</label>
-      <input class="control" id="insurance" placeholder="Medicare, Sutter Health, Health Net…">
-      <span class="help">We accept all major plans</span>
-    </div>
-  </div>
+  <form class="form" onsubmit="return false">
+    <div class="field"><label for="first">First name <em>(required)</em></label><input class="control" id="first" placeholder="Maria"><span class="help"></span></div>
+    <div class="field"><label for="phone">Phone <em>(required)</em></label><input class="control" id="phone" type="tel" placeholder="916-555-0100"><span class="help">We call to confirm your appointment</span></div>
+    <div class="field is-error"><label for="email">Email</label><input class="control" id="email" type="email" value="maria@example" aria-invalid="true"><span class="help">Enter a full email address, like maria@example.com.</span></div>
+    <div class="field"><label for="office">Preferred office</label><select class="control" id="office"><option>Sacramento, 4925 J Street</option><option>Folsom, 2160 E Bidwell Street</option></select><span class="help"></span></div>
+    <div class="field wide"><label for="notes">Anything we should know</label><textarea class="control" id="notes" placeholder="Current symptoms, a referring doctor, or questions for your visit" style="min-height: 90px"></textarea><span class="help">Please do not include medical record numbers or insurance ID numbers here.</span></div>
+  </form>
 </body>
 </html>

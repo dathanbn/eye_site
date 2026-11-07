@@ -1,18 +1,13 @@
 # Chip
 
-A small pill label for insurance plans, accepted states and the one amber highlight such as "New patients welcome".
+A 36px pill label. The site keeps `.chip` for text-only plan lists on pages without the logo row, and `.chip.amber` for the one highlight such as "New patients welcome".
 
 ## The consumer provides
-- The label, one to four words in sentence case or the plan's proper name.
-- A variant: default, `success` (with a check icon) or `amber`.
+- The label, one to four words. `amber` for the single highlight per view.
 
-## Spec
-- Height 32px, padding 0 14px, `radius-pill`, label in `ui`.
-- Default: `surface` fill, 1px `hairline` border, `ink` text.
-- Success: `canvas` fill, `hairline` border, `success` text with a 14px check icon; the word carries the meaning, the color only reinforces it.
-- Amber: `amber-pale` fill, `amber-ink` text, no border. One amber chip per view, and not on the same view as a primary button hero unless the chip sits far from it.
-- Chips wrap in a row with `space-2` gaps.
+## Classes (`bundle.css`)
+- `.chips` wraps with `space-2` gaps. `.chip` is `canvas` with a hairline border and 15px `ink` text; `.chip.amber` is `amber-pale` with `amber-ink` text and no border.
 
 ## Don't
 - Don't use an `amber` fill with white text.
-- Don't make chips interactive without a visible focus ring and a 48px tap area around them.
+- Don't make chips clickable without a 48px tap target around them.

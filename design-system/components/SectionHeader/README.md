@@ -1,20 +1,14 @@
 # SectionHeader
 
-The three-line opening of every page section: an uppercase eyebrow in blue, a serif heading and a sans lead paragraph.
+The opening of every section: an uppercase eyebrow in `blue` and a serif `h2`. Three variants: `.section-head` (left, max 720px, for a heading and a lead), `.section-head.split` (heading left, a `.link` right, a hairline underneath, used above grids), and `.section-head.center` (centered, used above the logo row).
 
 ## The consumer provides
-- The eyebrow text, two or three words naming the section ("Our specialties", "Insurance").
-- The heading, one sentence, no period, in sentence case.
-- Optional lead paragraph, one or two sentences.
-- Heading level: `h2` for sections, `h1` on a page opener (then the heading uses the `h1` style).
+- Eyebrow of two or three words, the heading in sentence case with no period unless it is a full sentence, and for the split variant a `.link` to the related page.
 
-## Spec
-- Vertical stack with `space-3` gaps, max width 640px, left-aligned. Center it only in a hero or appointment band.
-- Eyebrow in the `eyebrow` style, uppercase, `blue`. On `navy` it becomes `mist`.
-- Heading in `h2` (or `h1`), `ink`, `text-wrap: balance`. On `navy` it is `on-navy`.
-- Lead in `lead`, `slate`, measure 65ch. On `navy` it is `on-navy-soft`.
-- The header is followed by `space-12` before the section's content.
+## Classes (`bundle.css`)
+- `.section-head` is a grid with `space-4` gaps and 40 to 72px below. `.split` aligns the link to the heading's baseline and draws a hairline under both (mist at 28% on navy). `.center` centers everything.
+- The 12px top margin between eyebrow and heading is set inline on the site.
 
 ## Don't
-- Don't put the amber rule above a web section header; it belongs to social posts and feature panels.
-- Don't set the eyebrow in any color but blue or mist.
+- Don't put the amber rule above a web section header; it belongs to social posts.
+- Don't exceed one line of eyebrow.

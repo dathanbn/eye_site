@@ -1,23 +1,21 @@
-<!-- @dsCard group="Content" height=236 subtitle="Eyebrow, serif heading and lead paragraph that open every section" -->
+<!-- @dsCard group="Content" width=1366 height=200 subtitle="The split section header used above every grid: eyebrow and heading left, a link right, hairline below" -->
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>SectionHeader preview</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
-<style>
-  body { margin: 0; font-family: var(--font-sans); color: var(--ink); background: var(--canvas); }
-  .section-header { max-width: 640px; padding: var(--space-8) var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); }
-  .eyebrow { font: 500 12px/1.2 var(--font-sans); letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue); }
-  .h2 { font: 400 36px/1.15 var(--font-serif); letter-spacing: -0.015em; color: var(--ink); margin: 0; text-wrap: balance; }
-  .lead { font: 300 21px/1.55 var(--font-sans); color: var(--slate); margin: 0; max-width: 65ch; }
-</style>
+<style> body::before { display: none; } body { padding: 32px 0; } .section-head { margin-bottom: 0; } </style>
 </head>
 <body>
-  <header class="section-header">
-    <span class="eyebrow">Our specialties</span>
-    <h2 class="h2">From routine exams to advanced cataract surgery</h2>
-    <p class="lead">Five board-certified surgeons and two optometrists, serving Sacramento and Folsom with everything from eyeglass prescriptions to the Light Adjustable Lens.</p>
-  </header>
+  <div class="container">
+    <div class="section-head split">
+      <div>
+        <span class="eyebrow">Specialties</span>
+        <h2 class="h2" style="margin-top: 12px">Complete eye care, from your first exam through surgery.</h2>
+      </div>
+      <a class="link" href="#">All specialties <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
 </body>
 </html>

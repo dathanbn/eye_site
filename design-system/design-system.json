@@ -6,19 +6,52 @@
   "namespace": "EyeSite",
   "libraries": [],
   "sections": {},
-  "groups": ["Logos"],
+  "groups": ["Logos", "Photography", "Insurance"],
   "assetGroups": {
     "Logos": {
       "name": "Logos",
       "tile": "l",
-      "order": ["eye-site-logo.png"],
+      "order": ["eye-site-logo-transparent.png", "eye-site-mark.png", "eye-site-logo.png", "eye-site-logo-transparent-official.png"],
       "files": {
-        "eye-site-logo.png": {
-          "name": "eye-site-logo.png",
-          "blob": "6293540d91605afb43fdcc640606f352",
-          "size": 101074,
-          "type": "image/png"
-        }
+        "eye-site-logo-transparent.png": { "name": "eye-site-logo-transparent.png", "blob": "ce6bb4b127541b437e9047ddd1f1c09e", "size": 111385, "type": "image/png" },
+        "eye-site-mark.png": { "name": "eye-site-mark.png", "blob": "353abc3b6a1ec95d4c452bfb18eb91e3", "size": 76700, "type": "image/png" },
+        "eye-site-logo.png": { "name": "eye-site-logo.png", "blob": "6293540d91605afb43fdcc640606f352", "size": 101074, "type": "image/png" },
+        "eye-site-logo-transparent-official.png": { "name": "eye-site-logo-transparent-official.png", "blob": "f228cb505ea8538127d71645d6481911", "size": 51525, "type": "image/png" }
+      }
+    },
+    "Photography": {
+      "name": "Photography",
+      "tile": "m",
+      "order": ["hero-sacramento.jpg", "tower-bridge.jpg", "office-waiting-1.jpg", "office-waiting-2.jpg", "office-hall.jpg", "office-5.jpg", "cataract-anatomy.jpg", "cataract-2.jpg", "exam-slit-lamp.jpg", "exam-closeup.jpg", "exam-phoropter.jpg", "dr-jones.jpg", "dr-kira.jpg", "dr-palmer.jpg", "dr-rashidi.jpg"],
+      "files": {
+        "hero-sacramento.jpg": { "name": "hero-sacramento.jpg", "blob": "1782ee70a2f2693269e5628a93e73688", "size": 466448, "type": "image/jpeg" },
+        "tower-bridge.jpg": { "name": "tower-bridge.jpg", "blob": "5d5b279fce9423af912ec540dff71463", "size": 407274, "type": "image/jpeg" },
+        "office-waiting-1.jpg": { "name": "office-waiting-1.jpg", "blob": "18969d25e8318a38e26e4e7234b23b0b", "size": 118159, "type": "image/jpeg" },
+        "office-waiting-2.jpg": { "name": "office-waiting-2.jpg", "blob": "bb6a1f3ffe0df6eb3b48e1717a47eec2", "size": 107943, "type": "image/jpeg" },
+        "office-hall.jpg": { "name": "office-hall.jpg", "blob": "2741bd13dafcf4b8f200e91018e513c7", "size": 174091, "type": "image/jpeg" },
+        "office-5.jpg": { "name": "office-5.jpg", "blob": "29ebbb283568e967cbce5894cac884ef", "size": 164584, "type": "image/jpeg" },
+        "cataract-anatomy.jpg": { "name": "cataract-anatomy.jpg", "blob": "b9022a3baff8113cb2d0daf90aa52ec8", "size": 65237, "type": "image/jpeg" },
+        "cataract-2.jpg": { "name": "cataract-2.jpg", "blob": "7a28c00ecddca56688be975510d0da34", "size": 70969, "type": "image/jpeg" },
+        "exam-slit-lamp.jpg": { "name": "exam-slit-lamp.jpg", "blob": "ed0e8e10311ae2e70521ef9bcadd34cf", "size": 213505, "type": "image/jpeg" },
+        "exam-closeup.jpg": { "name": "exam-closeup.jpg", "blob": "91ba5f75af95b1d3676d0a74013bb007", "size": 220909, "type": "image/jpeg" },
+        "exam-phoropter.jpg": { "name": "exam-phoropter.jpg", "blob": "51b7b04700cdb4c77d1a0e91ca6b5dee", "size": 136945, "type": "image/jpeg" },
+        "dr-jones.jpg": { "name": "dr-jones.jpg", "blob": "f341c52f00f63c2d733f44dd554479f0", "size": 54658, "type": "image/jpeg" },
+        "dr-kira.jpg": { "name": "dr-kira.jpg", "blob": "ed2990a183249c8429fcf7702fcc7d5d", "size": 55870, "type": "image/jpeg" },
+        "dr-palmer.jpg": { "name": "dr-palmer.jpg", "blob": "571514cac2d5784ef81c13cca12cbf52", "size": 53894, "type": "image/jpeg" },
+        "dr-rashidi.jpg": { "name": "dr-rashidi.jpg", "blob": "ad020b55c597e6b518236071e10d0ac9", "size": 59347, "type": "image/jpeg" }
+      }
+    },
+    "Insurance": {
+      "name": "Insurance",
+      "tile": "s",
+      "order": ["ins-medicare.jpg", "ins-sutter.jpg", "ins-hillphysicians.jpg", "ins-blueshield.jpg", "ins-securehorizons.jpg", "ins-healthnet.jpg"],
+      "files": {
+        "ins-medicare.jpg": { "name": "ins-medicare.jpg", "blob": "818de09ebfada0f0275f8aecde71fab1", "size": 23271, "type": "image/jpeg" },
+        "ins-sutter.jpg": { "name": "ins-sutter.jpg", "blob": "0bfd99751ffc84a460700e96a6154b54", "size": 19707, "type": "image/jpeg" },
+        "ins-hillphysicians.jpg": { "name": "ins-hillphysicians.jpg", "blob": "dafd013152530744bd6f6883365a170e", "size": 31893, "type": "image/jpeg" },
+        "ins-blueshield.jpg": { "name": "ins-blueshield.jpg", "blob": "faf521e07144706534a3b6eb0cfdaeb0", "size": 31045, "type": "image/jpeg" },
+        "ins-securehorizons.jpg": { "name": "ins-securehorizons.jpg", "blob": "d30d905d11e46c7330f5a573abd5c306", "size": 25526, "type": "image/jpeg" },
+        "ins-healthnet.jpg": { "name": "ins-healthnet.jpg", "blob": "ff6197257d4087ee3e6f4b7cbbf200c8", "size": 20457, "type": "image/jpeg" }
       }
     }
   },
@@ -26,8 +59,8 @@
   "docs": { "readme": "project/README.md", "sections": [] },
   "lastChange": {
     "by": "Dathan",
-    "at": "2026-11-07T07:40:00Z",
+    "at": "2026-11-07T21:40:00Z",
     "via": "Claude Code",
-    "note": "Initial design system from the logo and eyesitemd.com"
+    "note": "Rebuilt from the live website: bundle.css from the site stylesheet, components mirror the pages, logos and photography added"
   }
 }

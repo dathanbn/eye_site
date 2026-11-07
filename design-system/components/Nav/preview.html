@@ -1,0 +1,37 @@
+<!-- @dsCard group="Navigation" width=1366 height=300 subtitle="Navy utility bar, then the nav in its two states: white over a photo hero, and frosted once the page scrolls" -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nav preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+  body::before { display: none; }
+  .demo { position: relative; height: 150px; overflow: hidden; }
+  .demo .utility, .demo .nav { position: absolute; }
+  .demo .nav { top: 38px; }
+  .demo.dark { background: url("../../assets/Photography/hero-sacramento.jpg") center 58% / cover; }
+  .demo.dark::after { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(8,24,56,0.92), rgba(16,32,64,0.6)); }
+  .demo.dark .utility, .demo.dark .nav { z-index: 2; }
+  .demo.light { background: var(--surface); }
+</style>
+</head>
+<body>
+  <div class="demo dark">
+    <div class="utility"><div class="container"><div class="offices"><span><span class="addr">Sacramento · </span><a href="#">916-452-8105</a></span><span><span class="addr">Folsom · </span><a href="#">916-983-9823</a></span></div><div class="right"><span>Board-certified ophthalmologists · Best Doctors in Sacramento</span></div></div></div>
+    <header class="nav on-dark"><div class="container">
+      <a class="brand" href="#"><img src="../../assets/Logos/eye-site-mark.png" alt=""><span class="wordmark"><b>EYE SITE</b><small>SACRAMENTO</small></span></a>
+      <nav><ul class="nav-links"><li><a href="#" aria-current="page">Home</a></li><li><a href="#">Doctors</a></li><li><a href="#">Specialties</a></li><li><a href="#">Eye Education</a></li><li><a href="#">Locations</a></li></ul></nav>
+      <div class="nav-actions"><a class="btn btn-primary" href="#">Schedule</a></div>
+    </div></header>
+  </div>
+  <div class="demo light">
+    <div class="utility"><div class="container"><div class="offices"><span><span class="addr">Sacramento · </span><a href="#">916-452-8105</a></span><span><span class="addr">Folsom · </span><a href="#">916-983-9823</a></span></div><div class="right"><span>Board-certified ophthalmologists · Best Doctors in Sacramento</span></div></div></div>
+    <header class="nav on-dark is-scrolled"><div class="container">
+      <a class="brand" href="#"><img src="../../assets/Logos/eye-site-mark.png" alt=""><span class="wordmark"><b>EYE SITE</b><small>SACRAMENTO</small></span></a>
+      <nav><ul class="nav-links"><li><a href="#">Home</a></li><li><a href="#" aria-current="page">Doctors</a></li><li><a href="#">Specialties</a></li><li><a href="#">Eye Education</a></li><li><a href="#">Locations</a></li></ul></nav>
+      <div class="nav-actions"><a class="btn btn-primary" href="#">Schedule</a></div>
+    </div></header>
+  </div>
+</body>
+</html>

@@ -1,20 +1,16 @@
 # DoctorCard
 
-A portrait with the doctor's name, role and one-line specialty, used in a four-column grid on the Doctors page and the homepage.
+A linked card for the homepage doctors grid: 4:5 portrait, serif name, uppercase role, one-line specialty and one accolade with the amber award icon.
 
 ## The consumer provides
-- A 4:5 portrait photograph of the doctor, taken at the practice in natural light. The preview shows the empty slot; never substitute a stock photo or an illustration.
-- The full name with degree: "Richard A. Jones, M.D." or "Andrew Chun, O.D."
-- The role: "Ophthalmologist" or "Optometrist".
-- One line of specialty in sentence case.
-- The `href` of the doctor's profile page; the whole card is the link.
+- The practice's portrait of the doctor (600 × 900 outdoor portraits are the current set), with `alt` = the doctor's name.
+- Name with degree, role ("Board-certified ophthalmologist" or "Optometrist"), a specialty line, and exactly one accolade that is either verified or confirmed by the practice. Current accolades: Jones, former Chief of Ophthalmology at Mercy General and Sutter General; Kira, Clinical Instructor at UC Davis Health; Palmer, Sactown Top Doctors 2026 and former Navy flight surgeon; Serdahl, Clinical Professor at UC Davis Medical Center; Rashidi, official ophthalmologist of the Sacramento Kings.
+- The `href` of the doctor's profile.
 
-## Spec
-- No border and no card fill; the portrait carries the shape with `radius-md`. The grid usually sits on an `ice` section.
-- Name in `title`, `ink`; role in `ui`, `blue`; specialty in `body-sm`, `slate`. Gaps `space-2`.
-- Four columns on desktop, two on tablet, one on mobile. Surgeons (M.D.) are listed before optometrists (O.D.).
-- Focus ring 2px `focus` around the whole card, offset 4px.
+## Classes (`bundle.css`)
+- `.doctors-featured` is a 3-column grid (2 on tablet, 1 on phones) with `space-8` row gaps. The sixth cell on the homepage is a `surface` card pointing to the optometrists.
+- `.doctor .photo` is 4:5, `radius-sm`, portrait positioned at 50% 20%. `.name` serif 24px, `.role` `ui` style in `blue`, `.spec` 16px light, `.accolade` 14px `amber-ink` with a 16px `amber` icon. On hover the name underlines.
 
 ## Don't
-- Don't crop portraits square or circular; the 4:5 frame is part of the identity.
-- Don't list awards inside the card; they belong on the profile page.
+- Don't show a doctor without a real portrait; use the optometrists' text card pattern instead.
+- Don't stack two accolades on a card; the profile page holds the full list.

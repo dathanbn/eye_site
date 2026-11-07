@@ -1,47 +1,19 @@
-<!-- @dsCard group="Cards" height=420 subtitle="Portrait, name, credentials in blue and a one-line specialty" -->
+<!-- @dsCard group="Cards" width=1366 height=640 subtitle="Featured doctor cards: portrait, serif name, uppercase role, specialty and one sourced accolade" -->
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>DoctorCard preview</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
-<style>
-  body { margin: 0; font-family: var(--font-sans); color: var(--ink); background: var(--ice); }
-  .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-6); padding: var(--space-6); }
-  .card { display: flex; flex-direction: column; gap: var(--space-2); text-decoration: none; color: inherit; border-radius: var(--radius-md); }
-  .card:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
-  .portrait { aspect-ratio: 4 / 5; border-radius: var(--radius-md); background: var(--surface); border: 1px solid var(--hairline); display: grid; place-items: center; color: var(--mute); font: 400 14px/1.45 var(--font-sans); overflow: hidden; margin-bottom: var(--space-2); }
-  .name { font: 400 24px/1.2 var(--font-serif); color: var(--ink); margin: 0; }
-  .cred { font: 500 15px/1.4 var(--font-sans); color: var(--blue); margin: 0; }
-  .spec { font: 400 16px/1.55 var(--font-sans); color: var(--slate); margin: 0; }
-</style>
+<style> body::before { display: none; } body { padding: 32px 0; } </style>
 </head>
 <body>
-  <div class="grid">
-    <a class="card" href="#">
-      <div class="portrait">Portrait 4:5</div>
-      <h3 class="name">Richard A. Jones, M.D.</h3>
-      <p class="cred">Ophthalmologist</p>
-      <p class="spec">Cataract and refractive surgery</p>
-    </a>
-    <a class="card" href="#">
-      <div class="portrait">Portrait 4:5</div>
-      <h3 class="name">David T. Kira, M.D.</h3>
-      <p class="cred">Ophthalmologist</p>
-      <p class="spec">Cataract surgery and glaucoma</p>
-    </a>
-    <a class="card" href="#">
-      <div class="portrait">Portrait 4:5</div>
-      <h3 class="name">Sina Rashidi, M.D.</h3>
-      <p class="cred">Ophthalmologist</p>
-      <p class="spec">Cataract and diabetic eye care</p>
-    </a>
-    <a class="card" href="#">
-      <div class="portrait">Portrait 4:5</div>
-      <h3 class="name">Andrew Chun, O.D.</h3>
-      <p class="cred">Optometrist</p>
-      <p class="spec">Routine vision care and contact lenses</p>
-    </a>
+  <div class="container">
+    <div class="doctors-featured">
+      <a class="doctor" href="#"><div class="photo"><img src="../../assets/Photography/dr-jones.jpg" alt="Richard A. Jones, M.D."></div><span class="name">Richard A. Jones, M.D.</span><span class="role">Board-certified ophthalmologist</span><span class="spec">Cataract and refractive surgery</span><span class="accolade"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>Former Chief of Ophthalmology, Mercy General and Sutter General Hospitals</span></a>
+      <a class="doctor" href="#"><div class="photo"><img src="../../assets/Photography/dr-kira.jpg" alt="David T. Kira, M.D."></div><span class="name">David T. Kira, M.D.</span><span class="role">Board-certified ophthalmologist</span><span class="spec">Laser cataract surgery and glaucoma</span><span class="accolade"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>Clinical Instructor of Ophthalmology, UC Davis Health</span></a>
+      <a class="doctor" href="#"><div class="photo"><img src="../../assets/Photography/dr-palmer.jpg" alt="Shawn Palmer, M.D."></div><span class="name">Shawn Palmer, M.D.</span><span class="role">Board-certified ophthalmologist</span><span class="spec">Cataract surgery and medical eye care</span><span class="accolade"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>Sactown Magazine Top Doctors 2026 · Former U.S. Navy flight surgeon</span></a>
+    </div>
   </div>
 </body>
 </html>
