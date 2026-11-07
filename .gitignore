@@ -8,3 +8,6 @@ skills/
 Thumbs.db
 .DS_Store
 *.tmp
+
+# Throwaway prototypes served locally, never published
+site/_proto/

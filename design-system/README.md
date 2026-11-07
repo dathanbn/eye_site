@@ -44,9 +44,15 @@ Load both families from Google Fonts with one link:
 ## Spacing, layout and shape
 
 - Container 1320px with a fluid gutter of 20 to 56px. Sections pad 72 to 128px on desktop, 48 to 80px when tight. Grids use `space-6` gutters: 3 columns for photo cards, 3 for featured doctors, 2 for locations and feature panels.
-- The hero is 96svh capped at 1040px, with no eyebrow and a one-line lead so the photo carries the opening; the trust panel overlaps its bottom edge by 92px (64px on tablet). Inner-page heroes are at least 420px.
+- The hero is 96svh capped at 1040px: the text block sits vertically centered on the left, with no eyebrow and a one-line lead, and the two pills sit bottom-centered above the trust panel so the photo carries the opening; the trust panel overlaps its bottom edge by 92px (64px on tablet). Inner-page heroes are at least 420px.
 - `radius-sm` for cards, inputs, gallery and portrait corners; `radius-md` for the trust panel; `radius-pill` for buttons and chips; no radius on full-bleed panels and photo heroes.
 - `shadow-floating` only on the trust panel and on dropdowns; the nav gets an inset hairline and a blur when scrolled.
+
+## Phones
+
+- Calling must be one tap from anywhere: the CallBar is fixed to the bottom of every page under 768px with Call Sacramento and Call Folsom cells, the utility bar shows both numbers, and the CTA band's numbers are `tel:` links. The nav collapses to a sheet whose Schedule button sits above the CallBar.
+- The hero drops to its content height with the headline at 46 to 60px and the pills stacked full-width. Grids collapse to one column, split panels stack photo over text, the trust panel stacks, and the gallery's tall tile goes full width.
+- Nothing is hover-dependent: card titles, links and the nav underline all read the same without a pointer.
 
 ## Motion
 
@@ -62,7 +68,7 @@ Real first: the Sacramento skyline at sunset for the homepage hero and CTA, the 
 
 ## Components
 
-Every component in this system is a piece of the live site, in the order a page uses them: Nav, Hero, TrustPanel, SectionHeader, ServiceCard, FeaturePanel, DoctorCard, DoctorProfile, Gallery, LogoRow, Locations, CtaBand, Footer, plus Button, Chip, Input and the SocialPost template. Each README says what the consumer provides and which `bundle.css` classes to use.
+Every component in this system is a piece of the live site, in the order a page uses them: Nav, Hero, TrustPanel, SectionHeader, ServiceCard, FeaturePanel, DoctorCard, DoctorProfile, Gallery, LogoRow, Locations, CtaBand, Footer and CallBar, plus Button, Chip, Input and the SocialPost template. Each README says what the consumer provides and which `bundle.css` classes to use.
 
 ## Social media
 
