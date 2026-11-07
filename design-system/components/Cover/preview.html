@@ -1,0 +1,48 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cover</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+  body { margin: 0; background: var(--canvas); width: 960px; height: 288px; position: relative; overflow: hidden; font-family: var(--font-sans); }
+  svg { position: absolute; inset: 0; width: 960px; height: 288px; }
+  .blue { fill: var(--blue); }
+  .navy { fill: var(--navy); }
+  .mist { fill: var(--mist); }
+  .amber { fill: var(--amber); }
+  .sky { fill: var(--sky); }
+  .arc-mist { fill: none; stroke: var(--mist); stroke-width: 8; }
+  .arc-sky { fill: none; stroke: var(--sky); stroke-width: 8; }
+  .tile { rx: 12; }
+  .name { position: absolute; left: 48px; top: 56px; width: 440px; margin: 0; font: 400 76px/0.95 var(--font-serif); letter-spacing: -0.02em; color: var(--ink); }
+  .tag { position: absolute; left: 48px; top: 232px; width: 440px; margin: 0; font: 400 14px/1.4 var(--font-sans); color: var(--mute); }
+</style>
+</head>
+<body>
+  <!--
+    blocks: blue 176×288 slab (x480, full height); navy 160×128 (space-16 × 2 wide, space-8 × 4 tall); mist 112×128 bleeding right; amber 96×120 (space-24 wide); sky 176×120 bleeding right and bottom. Corners radius-md (12px).
+    arrangement: one tall slab with four satellites in a 2×2 grid separated by space-4 gutters; the small navy block carries the brand's deepest color, amber is the one warm block and the smallest, sky and mist bleed off the edge like a page's photograph.
+    pattern: literal motif, the lens. The logo is an eye with a figure inside it, so three concentric arcs (radii 48, 96, 144 = space-12 multiples, stroke space-2) in mist and sky sweep from the navy block's bottom-left corner, clipped to the block.
+    scales: gutters space-4 (16px), margins space-6 (24px), corners radius-md, arcs at space-12 steps, strokes space-2.
+  -->
+  <svg viewBox="0 0 960 288" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <clipPath id="navyclip"><rect class="tile" x="672" y="24" width="160" height="128"/></clipPath>
+    </defs>
+    <rect class="blue tile" x="480" y="-12" width="176" height="312"/>
+    <rect class="navy tile" x="672" y="24" width="160" height="128"/>
+    <g clip-path="url(#navyclip)">
+      <circle class="arc-mist" cx="672" cy="152" r="48"/>
+      <circle class="arc-sky" cx="672" cy="152" r="96"/>
+      <circle class="arc-mist" cx="672" cy="152" r="144"/>
+    </g>
+    <rect class="mist tile" x="848" y="24" width="124" height="128"/>
+    <rect class="amber tile" x="672" y="168" width="96" height="132"/>
+    <rect class="sky tile" x="784" y="168" width="188" height="132"/>
+  </svg>
+  <h1 class="name">Eye Site<br>Sacramento</h1>
+  <p class="tag">Ophthalmology and optometry in Sacramento and Folsom. See Your Best.</p>
+</body>
+</html>

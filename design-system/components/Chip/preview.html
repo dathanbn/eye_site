@@ -1,0 +1,29 @@
+<!-- @dsCard group="Content" height=96 subtitle="Neutral chips for insurance plans and one amber-ink chip for a highlight" -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chip preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+  body { margin: 0; font-family: var(--font-sans); color: var(--ink); background: var(--canvas); }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); padding: var(--space-6); }
+  .chip { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 14px; border-radius: var(--radius-pill); background: var(--surface); border: 1px solid var(--hairline); color: var(--ink); font: 500 15px/1.4 var(--font-sans); }
+  .chip-amber { background: var(--amber-pale); border-color: transparent; color: var(--amber-ink); }
+  .chip-success { background: var(--canvas); border-color: var(--hairline); color: var(--success); }
+  .chip svg { width: 14px; height: 14px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <span class="chip">Medicare</span>
+    <span class="chip">Sutter Health</span>
+    <span class="chip">Hill Physicians</span>
+    <span class="chip">Blue Cross Blue Shield</span>
+    <span class="chip">Secure Horizons</span>
+    <span class="chip">Health Net</span>
+    <span class="chip chip-success"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Accepted</span>
+    <span class="chip chip-amber">New patients welcome</span>
+  </div>
+</body>
+</html>

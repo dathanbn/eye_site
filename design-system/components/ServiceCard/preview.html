@@ -1,0 +1,50 @@
+<!-- @dsCard group="Cards" height=360 subtitle="Specialty cards with a Lucide icon in an ice circle; hover lifts with a sky border" -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ServiceCard preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+  body { margin: 0; font-family: var(--font-sans); color: var(--ink); background: var(--canvas); }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); padding: var(--space-6); }
+  .card {
+    display: flex; flex-direction: column; gap: var(--space-4);
+    background: var(--canvas); border: 1px solid var(--hairline); border-radius: var(--radius-md); padding: var(--space-8);
+    transition: border-color 160ms cubic-bezier(0.2,0,0,1), box-shadow 160ms cubic-bezier(0.2,0,0,1);
+  }
+  .icon { width: 48px; height: 48px; border-radius: var(--radius-pill); background: var(--ice); color: var(--blue); display: grid; place-items: center; }
+  .icon svg { width: 24px; height: 24px; }
+  .title { font: 400 24px/1.2 var(--font-serif); color: var(--ink); margin: 0; }
+  .body { font: 300 17px/1.6 var(--font-sans); color: var(--slate); margin: 0; flex: 1; }
+  .link { align-self: flex-start; font: 500 13px/1 var(--font-sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue); text-decoration: none; padding-bottom: 2px; box-shadow: inset 0 -2px 0 transparent; transition: box-shadow 120ms cubic-bezier(0.2,0,0,1); }
+  .link:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  @media (hover: hover) and (pointer: fine) {
+    .card:hover { border-color: var(--sky); box-shadow: var(--shadow-card); }
+    .link:hover { box-shadow: inset 0 -2px 0 var(--amber); }
+  }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <article class="card">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+      <h3 class="title">Cataract surgery</h3>
+      <p class="body">Laser-assisted LenSx surgery with advanced lens options, including the Light Adjustable Lens that is fine-tuned after your procedure.</p>
+      <a class="link" href="#">Learn about cataracts</a>
+    </article>
+    <article class="card">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.2 2.2M16.2 16.2l2.2 2.2M5.6 18.4l2.2-2.2M16.2 7.8l2.2-2.2"/><circle cx="12" cy="12" r="4"/></svg></div>
+      <h3 class="title">Laser vision correction</h3>
+      <p class="body">LASIK and PRK for patients who want to depend less on glasses and contacts, with a candidacy exam first.</p>
+      <a class="link" href="#">Learn about LASIK</a>
+    </article>
+    <article class="card">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 1 8 8c0 5-8 12-8 12S4 15 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <h3 class="title">Glaucoma care</h3>
+      <p class="body">Pressure monitoring, drops, laser treatment and surgery to protect your optic nerve over the long term.</p>
+      <a class="link" href="#">Learn about glaucoma</a>
+    </article>
+  </div>
+</body>
+</html>

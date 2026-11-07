@@ -1,0 +1,10 @@
+# Third-party skill repos cloned for reference (not part of the site)
+skills/
+
+# Local Claude Code config and skill copies
+.claude/
+
+# OS and editor noise
+Thumbs.db
+.DS_Store
+*.tmp

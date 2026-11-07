@@ -1,0 +1,23 @@
+<!-- @dsCard group="Content" height=150 subtitle="Serif numbers in blue with a sans label; three in a row at most" -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>StatTile preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+  body { margin: 0; font-family: var(--font-sans); color: var(--ink); background: var(--canvas); }
+  .row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); padding: var(--space-6); max-width: 760px; }
+  .stat { display: flex; flex-direction: column; gap: var(--space-2); padding-left: var(--space-4); border-left: 1px solid var(--hairline); }
+  .num { font: 400 44px/1 var(--font-serif); letter-spacing: -0.01em; color: var(--blue); font-variant-numeric: tabular-nums; }
+  .label { font: 500 15px/1.4 var(--font-sans); color: var(--slate); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="stat"><span class="num">35 yrs</span><span class="label">Average surgeon experience</span></div>
+    <div class="stat"><span class="num">7</span><span class="label">Doctors across two offices</span></div>
+    <div class="stat"><span class="num">2</span><span class="label">Locations with free parking</span></div>
+  </div>
+</body>
+</html>
