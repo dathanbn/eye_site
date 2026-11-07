@@ -35,7 +35,7 @@ Load both families from Google Fonts with one link:
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 ```
 
-- `display` (84px desktop, 44px mobile) only in the homepage hero. `h1` (56/38) on inner-page photo heroes. `h2` (44/32) for sections, panels and CTA bands. `h3` (28/24) for card titles. Doctor names in cards and profiles are the serif at 24px.
+- `display` (52 to 88px fluid on desktop, 46 to 60px on phones) only in the homepage hero. `h1` (56/38) on inner-page photo heroes. `h2` (44/32) for sections, panels and CTA bands. `h3` (28/24) for card titles. Doctor names in cards and profiles are the serif at 24px.
 - `lead` at weight 300 for the paragraph under any headline. `body` 18px/300 for running text. `body-sm` 16px/400 inside cards, footer and forms. `caption` 14px/400 for hours, helper text and source lines.
 - `eyebrow` 12px/500, uppercase, 0.2em, in `blue` (mist on navy) above every section heading. `button` 13px/500 uppercase 0.14em. `ui` 13px/500 uppercase for nav links and doctor roles.
 - Trust-panel figures are the serif at 30 to 40px. Phone numbers in the locations block and CTA band are the serif at 28 to 34px with tabular figures.
