@@ -44,7 +44,7 @@ Load both families from Google Fonts with one link:
 ## Spacing, layout and shape
 
 - Container 1320px with a fluid gutter of 20 to 56px. Sections pad 72 to 128px on desktop, 48 to 80px when tight. Grids use `space-6` gutters: 3 columns for photo cards, 3 for featured doctors, 2 for locations and feature panels.
-- The hero is 85svh capped at 850px; the trust panel overlaps its bottom edge by 92px (64px on tablet). Inner-page heroes are at least 420px.
+- The hero is 96svh capped at 1040px, with no eyebrow and a one-line lead so the photo carries the opening; the trust panel overlaps its bottom edge by 92px (64px on tablet). Inner-page heroes are at least 420px.
 - `radius-sm` for cards, inputs, gallery and portrait corners; `radius-md` for the trust panel; `radius-pill` for buttons and chips; no radius on full-bleed panels and photo heroes.
 - `shadow-floating` only on the trust panel and on dropdowns; the nav gets an inset hairline and a blur when scrolled.
 

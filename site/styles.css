@@ -141,15 +141,15 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 @media (hover: hover) and (pointer: fine) { a:hover .photo.zoom img, .photo.zoom:hover img { transform: scale(1.04); } }
 
 /* ---------- Hero ---------- */
-.hero { position: relative; min-height: min(85svh, 850px); display: grid; align-items: end; color: var(--on-navy); isolation: isolate; overflow: hidden; }
+.hero { position: relative; min-height: min(96svh, 1040px); display: grid; align-items: end; color: var(--on-navy); isolation: isolate; overflow: hidden; }
 .hero .bg { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
 .hero .bg img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 58%; transform: scale(1.06); transform-origin: 60% 60%; }
 .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(100deg, rgba(8,24,56,0.92) 0%, rgba(16,32,64,0.72) 42%, rgba(16,32,64,0.28) 75%, rgba(16,32,64,0.45) 100%); }
 .hero::after { content: ""; position: absolute; inset: auto 0 0 0; height: 45%; z-index: -1; background: linear-gradient(180deg, rgba(8,24,56,0) 0%, rgba(8,24,56,0.7) 100%); }
-.hero .container { padding-top: clamp(140px, 17vh, 190px); padding-bottom: clamp(140px, 15vh, 185px); display: grid; gap: var(--space-5, 20px); max-width: calc(var(--container)); }
+.hero .container { padding-top: clamp(160px, 20vh, 240px); padding-bottom: clamp(150px, 17vh, 210px); display: grid; gap: var(--space-6); max-width: calc(var(--container)); }
 .hero .eyebrow { color: var(--mist); }
-.hero .display { color: var(--on-navy); max-width: 12ch; }
-.hero .lead { color: rgba(255,255,255,0.86); max-width: 54ch; }
+.hero .display { color: var(--on-navy); max-width: 12ch; font-size: clamp(52px, 7.6vw, 104px); }
+.hero .lead { color: rgba(255,255,255,0.88); max-width: 54ch; font-size: clamp(19px, 1.7vw, 24px); }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4); margin-top: var(--space-2); }
 .hero .credit { position: absolute; right: var(--space-6); bottom: var(--space-4); font: 400 11px/1 var(--font-sans); letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
 
