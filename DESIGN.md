@@ -280,7 +280,15 @@ components:
     border: "1px solid {colors.hairline}"
     rounded: "{rounded.md}"
     shadow: "0 4px 12px rgba(16,32,64,0.10), 0 16px 48px rgba(16,32,64,0.14)"
-    placement: "overlaps the bottom of the hero by 92px; four columns of serif figure, label and source line"
+    placement: "overlaps the bottom of the hero by 92px; three columns of serif figure, label and source line, then the kings-strip as the bottom edge"
+  kings-strip:
+    backgroundColor: "radial gradient from #1c3566 at the left through {colors.navy} to {colors.navy-deep}"
+    textColor: "{colors.on-navy}"
+    height: 104px
+    rounded: "bottom corners only, matching the trust panel"
+    content: "white one-color Kings SAC crest at 76px with no box; OFFICIAL in tracked {colors.mist} caps over OPHTHALMOLOGIST OF THE; a white plate skewed 14 degrees reading SACRAMENTO KINGS in navy; at the far right, TEAM OPHTHALMOLOGIST over Dr. Sina Rashidi, M.D."
+    link: "the doctor's name links to his profile; plain white at rest, a 1px {colors.mist} underline on hover; no button"
+    usage: "homepage trust panel only; needs the team's written approval before launch"
   photo-hero:
     backgroundImage: "full-bleed photograph, navy gradient overlay heavier on the left"
     textColor: "{colors.on-navy}"

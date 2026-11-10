@@ -11,6 +11,7 @@
   "sections": {},
   "groups": [
     "Logos",
+    "Partners",
     "Photography",
     "Insurance"
   ],
@@ -213,6 +214,21 @@
           "type": "image/jpeg"
         }
       }
+    },
+    "Partners": {
+      "name": "Partners",
+      "tile": "m",
+      "order": [
+        "kings-sac-white.png"
+      ],
+      "files": {
+        "kings-sac-white.png": {
+          "name": "kings-sac-white.png",
+          "blob": "6c84aa7dbf7ce6a464f65f3ba71f1e81",
+          "size": 6349,
+          "type": "image/png"
+        }
+      }
     }
   },
   "blobs": {},
@@ -222,8 +238,8 @@
   },
   "lastChange": {
     "by": "Dathan",
-    "at": "2026-11-07T22:10:00Z",
+    "at": "2026-11-09T23:10:00Z",
     "via": "Claude Code",
-    "note": "Hero: centered text block, bottom-centered pills, 88px headline; CallBar component for phones"
+    "note": "Trust panel: three proof points plus the Kings strip; Partners asset group"
   }
 }
