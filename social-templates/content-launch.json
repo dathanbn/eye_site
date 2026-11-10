@@ -1,0 +1,266 @@
+{
+  "_help": "The first nine posts from the Instagram launch kit, in grid order (top row pinned). Render with: node render.js --content=content-launch.json --out=launch. Placeholder images live in assets/placeholders; swap the path to a real photo and re-render.",
+  "sizes": [
+    "portrait"
+  ],
+  "series": [
+    {
+      "id": "01-welcome",
+      "eyebrow": "Welcome to Eye Site",
+      "items": [
+        {
+          "template": "carousel-cover",
+          "eyebrow": "Welcome",
+          "headline": "Eye care in Sacramento since *1987*",
+          "body": "Five board-certified ophthalmologists, two optometrists, two offices. Swipe to meet the practice."
+        },
+        {
+          "template": "carousel-slide",
+          "headline": "Who we are",
+          "body": "An ophthalmology and optometry practice caring for Sacramento and Folsom families for more than three decades."
+        },
+        {
+          "template": "carousel-slide",
+          "headline": "What we treat",
+          "body": "Cataracts, LASIK and PRK, cornea and glaucoma care, diabetic eye exams and routine vision exams."
+        },
+        {
+          "template": "carousel-slide",
+          "headline": "Two offices, free parking",
+          "body": "4925 J Street in East Sacramento and 2160 E Bidwell Street in Folsom. Surgery takes place at an outpatient surgery center."
+        },
+        {
+          "template": "carousel-slide",
+          "headline": "How to reach us",
+          "body": "Sacramento 916-452-8105. Folsom 916-983-9823. Or request an appointment at eyesitemd.com."
+        }
+      ]
+    },
+    {
+      "id": "02-meet-our-doctors",
+      "eyebrow": "Meet the team",
+      "items": [
+        {
+          "template": "carousel-cover",
+          "headline": "Meet our *doctors*",
+          "body": "Seven doctors, one practice. Swipe through.",
+          "tone": "light"
+        },
+        {
+          "template": "doctor",
+          "image": "assets/dr-jones.jpg",
+          "focus": "50% 15%",
+          "name": "Richard A. Jones, M.D.",
+          "role": "Cataract and refractive surgery",
+          "accolade": "Best Doctors in Sacramento, Sacramento Magazine",
+          "accoladeSource": "Named repeatedly by his peers"
+        },
+        {
+          "template": "doctor",
+          "image": "assets/dr-serdahl.jpg",
+          "focus": "50% 15%",
+          "name": "Christian L. Serdahl, M.D.",
+          "role": "Cataract surgery and laser vision correction",
+          "accolade": "Past Chief of Ophthalmology, Mercy General and Sutter Hospitals"
+        },
+        {
+          "template": "doctor",
+          "image": "assets/dr-kira.jpg",
+          "focus": "50% 15%",
+          "name": "David T. Kira, M.D.",
+          "role": "Laser cataract surgery and glaucoma",
+          "accolade": "Clinical Instructor of Ophthalmology, UC Davis Health"
+        },
+        {
+          "template": "doctor",
+          "image": "assets/dr-palmer.jpg",
+          "focus": "50% 15%",
+          "name": "Shawn Palmer, M.D.",
+          "role": "Cataract surgery, glaucoma and diabetic eye care",
+          "accolade": "Sactown Magazine Top Doctors 2026"
+        },
+        {
+          "template": "doctor",
+          "image": "assets/dr-rashidi-hires.jpg",
+          "focus": "50% 18%",
+          "name": "Sina Rashidi, M.D.",
+          "role": "Cornea, glaucoma and refractive surgery",
+          "accolade": "Official ophthalmologist of the Sacramento Kings",
+          "accoladeSource": "Confirm wording with Dr. Rashidi"
+        },
+        {
+          "template": "doctor",
+          "image": "assets/dr-chun.jpg",
+          "focus": "50% 15%",
+          "name": "Andrew Chun, O.D.",
+          "role": "Optometrist, J Street office",
+          "accolade": "Full-time optometric care at J Street for more than a decade"
+        },
+        {
+          "template": "doctor",
+          "image": "assets/dr-minhas.jpg",
+          "focus": "50% 15%",
+          "name": "Huda Minhas, O.D.",
+          "role": "Therapeutic optometrist",
+          "accolade": "Published clinical writer on glaucoma and dry eye medications"
+        }
+      ]
+    },
+    {
+      "id": "05-pumpkin-contest",
+      "eyebrow": "Life at Eye Site",
+      "items": [
+        {
+          "template": "frame",
+          "image": "assets/placeholders/frame-photo.png",
+          "caption": "Our team traded eye charts for *markers*",
+          "sub": "The pumpkin drawing contest, October 2026. Swipe to see the entries."
+        },
+        {
+          "template": "frame",
+          "nologo": true,
+          "image": "assets/placeholders/frame-entry.png",
+          "caption": "Entry one",
+          "sub": "By [first name], [role]"
+        },
+        {
+          "template": "frame",
+          "nologo": true,
+          "image": "assets/placeholders/frame-entry.png",
+          "caption": "Entry two",
+          "sub": "By [first name], [role]"
+        },
+        {
+          "template": "frame",
+          "nologo": true,
+          "image": "assets/placeholders/frame-entry.png",
+          "caption": "Entry three",
+          "sub": "By [first name], [role]"
+        },
+        {
+          "template": "frame",
+          "nologo": true,
+          "image": "assets/placeholders/frame-entry.png",
+          "caption": "And the *winner*",
+          "sub": "By [first name], [role]. Congratulations."
+        }
+      ]
+    },
+    {
+      "id": "04-what-is-a-cataract",
+      "eyebrow": "Eye health",
+      "footerNote": "Reviewed by Dr. [name]",
+      "items": [
+        {
+          "template": "carousel-cover",
+          "headline": "What is a *cataract?*",
+          "body": "The most common reason people come to see us, in four slides."
+        },
+        {
+          "template": "carousel-slide",
+          "headline": "A cloudy lens",
+          "body": "The lens inside your eye is normally clear. A cataract is that lens turning cloudy, most often with age."
+        },
+        {
+          "template": "carousel-slide",
+          "headline": "What you might notice",
+          "body": "Blurry or dim vision, glare and halos when driving at night, colors that look faded, and glasses that need changing more often."
+        },
+        {
+          "template": "carousel-slide",
+          "headline": "It is very common",
+          "body": "Most people develop some clouding as they get older. It is not a growth or a film on the eye, and it is not caused by using your eyes."
+        },
+        {
+          "template": "carousel-slide",
+          "headline": "And very treatable",
+          "body": "Surgery replaces the cloudy lens with a clear one, usually one eye at a time, at an outpatient surgery center. A dilated exam tells you where you stand."
+        }
+      ]
+    },
+    {
+      "id": "03-meet-our-technicians",
+      "eyebrow": "Meet the team",
+      "items": [
+        {
+          "template": "carousel-cover",
+          "headline": "Meet our *technicians*",
+          "body": "The people who run your tests and answer your questions. Swipe through.",
+          "tone": "light"
+        },
+        {
+          "template": "doctor",
+          "image": "assets/placeholders/headshot.png",
+          "name": "[First Last]",
+          "role": "Ophthalmic technician",
+          "accolade": "[One personal fact, in their own words]",
+          "accoladeSource": "At Eye Site since [year]"
+        },
+        {
+          "template": "doctor",
+          "image": "assets/placeholders/headshot.png",
+          "name": "[First Last]",
+          "role": "Ophthalmic technician",
+          "accolade": "[One personal fact, in their own words]",
+          "accoladeSource": "At Eye Site since [year]"
+        },
+        {
+          "template": "doctor",
+          "image": "assets/placeholders/headshot.png",
+          "name": "[First Last]",
+          "role": "Front desk",
+          "accolade": "[One personal fact, in their own words]",
+          "accoladeSource": "At Eye Site since [year]"
+        }
+      ]
+    }
+  ],
+  "announcement": [
+    {
+      "id": "03-how-to-book",
+      "eyebrow": "Visit us",
+      "headline": "Booking a visit is one *call*",
+      "body": "New patients welcome at both offices. Free parking at the door, and you can also request an appointment at eyesitemd.com.",
+      "phoneLabel": "Sacramento",
+      "phone": "916-452-8105",
+      "phoneLabel2": "Folsom",
+      "phone2": "916-983-9823"
+    }
+  ],
+  "photo": [
+    {
+      "id": "06-dr-palmer-award",
+      "image": "assets/placeholders/photo-portrait.png",
+      "focus": "center",
+      "eyebrow": "Recognition",
+      "headline": "Congratulations, Dr. *Palmer*",
+      "body": "Named to Sactown Magazine's Top Doctors 2026 in ophthalmology. Twenty-five years of caring for Folsom and Sacramento families."
+    },
+    {
+      "id": "02-office-tour-reel-cover",
+      "sizes": [
+        "story",
+        "portrait"
+      ],
+      "image": "assets/placeholders/photo-story.png",
+      "focus": "center",
+      "eyebrow": "Life at Eye Site",
+      "headline": "Our J Street office in *30 seconds*",
+      "body": "",
+      "chip": "Tap to take the tour"
+    }
+  ],
+  "doctor": [
+    {
+      "id": "01-dr-rashidi-spotlight",
+      "image": "assets/dr-rashidi-hires.jpg",
+      "focus": "50% 18%",
+      "eyebrow": "Meet the doctors",
+      "name": "Sina Rashidi, M.D.",
+      "role": "Cornea, glaucoma and refractive surgery",
+      "accolade": "Corneal transplants, LASIK and PRK, and minimally invasive glaucoma surgery",
+      "accoladeSource": "Official ophthalmologist of the Sacramento Kings (confirm wording)",
+      "chip": "New patients welcome"
+    }
+  ]
+}

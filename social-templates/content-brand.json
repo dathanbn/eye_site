@@ -1,0 +1,106 @@
+{
+  "_help": "Brand board: reference pages followed by one page per template. Render: node render.js --content=content-brand.json --out=brand; Canva file: node measure.js --content=content-brand.json --out=brand && node build-pptx.js --out=brand --name=eye-site-brand-board --sizes=portrait",
+  "sizes": [
+    "portrait"
+  ],
+  "pages": [
+    {
+      "template": "brand-cover"
+    },
+    {
+      "template": "brand-colors-1"
+    },
+    {
+      "template": "brand-colors-2"
+    },
+    {
+      "template": "brand-type"
+    },
+    {
+      "template": "brand-logo"
+    },
+    {
+      "template": "brand-elements"
+    },
+    {
+      "template": "brand-writing"
+    }
+  ],
+  "education": [
+    {
+      "id": "cataract-signs",
+      "eyebrow": "Cataracts",
+      "headline": "Night driving getting *harder?*",
+      "body": "Halos around headlights and faded colors are common early signs of a cloudy lens (cataract). A dilated exam will tell you where you stand.",
+      "chip": "New patients welcome"
+    }
+  ],
+  "announcement": [
+    {
+      "id": "folsom-friday",
+      "eyebrow": "Folsom office",
+      "headline": "Early Friday hours, 6:30am to *2:00pm*",
+      "body": "Fit your exam in before work. Free parking at the door.",
+      "phoneLabel": "Call Folsom",
+      "phone": "916-983-9823"
+    }
+  ],
+  "photo": [
+    {
+      "id": "since-1987",
+      "image": "assets/hero-sacramento.jpg",
+      "focus": "50% 40%",
+      "eyebrow": "Sacramento and Folsom",
+      "headline": "Caring for Sacramento's eyes since *1987*",
+      "body": "Five board-certified ophthalmologists and two optometrists, two offices, free parking at both.",
+      "chip": "New patients welcome"
+    }
+  ],
+  "review": [
+    {
+      "id": "sample",
+      "quote": "Paste the patient's review here, word for word, once they have given permission to share it. Keep it under about 40 words so it stays large.",
+      "reviewer": "First name, City",
+      "source": "Google review"
+    }
+  ],
+  "doctor": [
+    {
+      "id": "rashidi",
+      "image": "assets/dr-rashidi-hires.jpg",
+      "focus": "50% 18%",
+      "eyebrow": "Meet the doctors",
+      "name": "Dr. Rashidi",
+      "role": "Cornea specialist",
+      "accolade": "Team ophthalmologist for the Sacramento Kings",
+      "accoladeSource": "Confirm wording and source before posting",
+      "chip": "New patients welcome"
+    }
+  ],
+  "frame": [
+    {
+      "id": "sample",
+      "eyebrow": "Life at Eye Site",
+      "image": "assets/office-waiting-1.jpg",
+      "caption": "A caption in the *serif*",
+      "sub": "A second line in Inter Light for names or dates."
+    }
+  ],
+  "carousel": [
+    {
+      "id": "cataract-consult",
+      "eyebrow": "Cataract surgery",
+      "cover": {
+        "headline": "What happens at a cataract *consult*",
+        "body": "Four steps, one visit. Swipe through."
+      },
+      "footerNote": "Dr. [name] reviewed this",
+      "slides": [
+        {
+          "headline": "A dilated exam",
+          "body": "Drops widen your pupils so the doctor can see the lens and the retina behind it. Plan for blurry near vision for a few hours afterward."
+        }
+      ]
+    }
+  ]
+}

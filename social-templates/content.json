@@ -1,0 +1,104 @@
+{
+  "_help": "One entry per post. Keys match the template name. Wrap one word in *asterisks* for the italic blue accent word; **double** for medium weight. Run `node render.js` to produce PNGs in out/. Set sizes per entry or leave the default (square + portrait).",
+  "sizes": [
+    "square",
+    "portrait"
+  ],
+  "education": [
+    {
+      "id": "dry-eye",
+      "eyebrow": "Eye health",
+      "headline": "Dry, gritty eyes after a day at the *screen?*",
+      "body": "Blink more, look 20 feet away every 20 minutes, and ask us about dry eye therapy if drops stop helping.",
+      "image": "assets/exam-closeup.jpg",
+      "focus": "50% 40%",
+      "chip": "Ask us at your next visit"
+    },
+    {
+      "id": "cataract-signs",
+      "eyebrow": "Cataracts",
+      "headline": "Night driving getting *harder?*",
+      "body": "Halos around headlights and faded colors are common early signs of a cloudy lens (cataract). A dilated exam will tell you where you stand.",
+      "chip": "New patients welcome"
+    }
+  ],
+  "announcement": [
+    {
+      "id": "folsom-friday",
+      "eyebrow": "Folsom office",
+      "headline": "Early Friday hours, 6:30am to *2:00pm*",
+      "body": "Fit your exam in before work. Free parking at the door.",
+      "phoneLabel": "Call Folsom",
+      "phone": "916-983-9823"
+    }
+  ],
+  "photo": [
+    {
+      "id": "since-1987",
+      "image": "assets/hero-sacramento.jpg",
+      "focus": "50% 40%",
+      "eyebrow": "Sacramento and Folsom",
+      "headline": "Caring for Sacramento's eyes since *1987*",
+      "body": "Five board-certified ophthalmologists and two optometrists, two offices, free parking at both.",
+      "chip": "New patients welcome"
+    },
+    {
+      "id": "office",
+      "image": "assets/office-waiting-1.jpg",
+      "focus": "center",
+      "eyebrow": "J Street office",
+      "headline": "New patients *welcome*",
+      "body": "Two offices, free parking, and a team that has looked after Sacramento since 1987."
+    }
+  ],
+  "review": [
+    {
+      "id": "sample",
+      "quote": "Paste the patient's review here, word for word, once they have given permission to share it. Keep it under about 40 words so it stays large.",
+      "reviewer": "First name, City",
+      "source": "Google review"
+    }
+  ],
+  "doctor": [
+    {
+      "id": "rashidi",
+      "image": "assets/dr-rashidi-hires.jpg",
+      "focus": "50% 18%",
+      "eyebrow": "Meet the doctors",
+      "name": "Dr. Rashidi",
+      "role": "Cornea specialist",
+      "accolade": "Team ophthalmologist for the Sacramento Kings",
+      "accoladeSource": "Confirm wording and source before posting",
+      "chip": "New patients welcome"
+    }
+  ],
+  "carousel": [
+    {
+      "id": "cataract-consult",
+      "eyebrow": "Cataract surgery",
+      "cover": {
+        "headline": "What happens at a cataract *consult*",
+        "body": "Four steps, one visit. Swipe through."
+      },
+      "footerNote": "Dr. [name] reviewed this",
+      "slides": [
+        {
+          "headline": "A dilated exam",
+          "body": "Drops widen your pupils so the doctor can see the lens and the retina behind it. Plan for blurry near vision for a few hours afterward."
+        },
+        {
+          "headline": "Measurements of your eye",
+          "body": "Painless scans measure the length and curve of your eye. They decide the power of the replacement lens."
+        },
+        {
+          "headline": "Choosing a lens",
+          "body": "Standard, toric for astigmatism, or a light adjustable lens that is fine-tuned after surgery. We go through the options with you."
+        },
+        {
+          "headline": "Booking the surgery",
+          "body": "Surgery takes place at an outpatient surgery center, not in the office, one eye at a time. Most people go home the same morning."
+        }
+      ]
+    }
+  ]
+}
