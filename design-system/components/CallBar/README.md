@@ -13,3 +13,7 @@ A bar fixed to the bottom of every page on phones (under 768px) with two tap-to-
 ## Don't
 - Don't add a third cell (scheduling lives in the nav sheet and the CTA band).
 - Don't show it on tablets or desktops.
+
+## Notes
+- The bar sits at z-index 51, above the open menu sheet, so it is always reachable. The page reserves `scroll-padding-bottom: 96px` under 768px so a focused field never hides behind it.
+- Under 360px the icon, gap and number shrink slightly so both numbers fit.

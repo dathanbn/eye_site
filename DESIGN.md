@@ -17,7 +17,8 @@ colors:
   hairline: "#d9e2ec"
   ink: "#102040"
   slate: "#4a5a6e"
-  mute: "#67788c"
+  mute: "#5c6d81"
+  control-border: "#74879d"
   on-blue: "#ffffff"
   on-navy: "#ffffff"
   on-navy-soft: "#b3cfea"
@@ -280,7 +281,7 @@ components:
     border: "1px solid {colors.hairline}"
     rounded: "{rounded.md}"
     shadow: "0 4px 12px rgba(16,32,64,0.10), 0 16px 48px rgba(16,32,64,0.14)"
-    placement: "overlaps the bottom of the hero by 92px; three columns of serif figure, label and source line, then the kings-strip as the bottom edge"
+    placement: "overlaps the bottom of the hero by 92px; four columns of serif figure, label and source line, then the kings-strip as the bottom edge; two columns under 900px, one under 600px"
   kings-strip:
     backgroundColor: "radial gradient from #1c3566 at the left through {colors.navy} to {colors.navy-deep}"
     textColor: "{colors.on-navy}"
@@ -363,7 +364,8 @@ One accent, **amber** (`{colors.amber}`, #f0a32b), is the only warm color in the
 ### Text
 - **Ink** (`{colors.ink}`, #102040): headings and emphasized text on canvas, surface and ice. Same value as navy.
 - **Slate** (`{colors.slate}`, #4a5a6e): body copy on canvas, surface and ice. 7.0:1 on white.
-- **Mute** (`{colors.mute}`, #67788c): captions, timestamps, helper text. 4.6:1 on white; never below 14px.
+- **Mute** (`{colors.mute}`, #5c6d81): captions, timestamps, helper text. 5.3:1 on white and at least 4.7:1 on surface and ice; never below 14px.
+- **Control border** (`{colors.control-border}`, #74879d): the boundary of form controls only, 3.6:1 on white, above the 3:1 WCAG requires.
 - **On Navy** (`{colors.on-navy}`, #ffffff) and **On Navy Soft** (`{colors.on-navy-soft}`, #b3cfea): headings and body on navy bands and the footer.
 - **On Blue** (`{colors.on-blue}`, #ffffff): text on an Eye Site Blue fill.
 

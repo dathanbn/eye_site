@@ -17,3 +17,10 @@ The fixed header: a 38px `navy-deep` utility bar with both office phone numbers,
 ## Don't
 - Don't add a second button, a search field or a logo image with the wordmark baked in.
 - Don't put the nav over a photo without the hero's navy gradient; the white text depends on it.
+
+## Menu open (phones and tablets)
+- The script adds `.is-menu-open` to `.nav` while the sheet is open. The bar turns solid white and shows the full-color mark, the dark wordmark and a dark close icon, exactly as it does when scrolled, because the white sheet sits behind it.
+- The sheet is a `nav` landmark labelled "Menu". Closed, it is `visibility: hidden`, so its links cannot be reached by keyboard or screen reader. Open, `main` and `footer` are `inert`; Escape closes it and returns focus to the toggle.
+- The current page is marked with `aria-current`, blue text and an amber underline, never color alone.
+- The call bar stays visible above the open sheet, so both phone numbers are one tap away from the menu.
+- On navy and over photographs the keyboard focus ring is white; everywhere else it is `blue`.

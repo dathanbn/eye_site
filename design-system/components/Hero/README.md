@@ -5,7 +5,7 @@ The full-bleed photo opener. The homepage uses `.hero` with the `display` headli
 ## The consumer provides
 - A photograph wide enough for 2200px, in `.bg > img`. The homepage uses the practice's skyline; inner pages use a clinical photo or the Tower Bridge, positioned with an inline `object-position`.
 - A headline with one `<em class="accent">` word (the last word reads best), a lead of one short sentence, and the two pills in `.hero-actions`. The homepage hero has no eyebrow; inner-page heroes keep one.
-- On the homepage, the three trust items and the Kings strip (see TrustPanel) in `.container.trust` immediately after the hero.
+- On the homepage, the four trust items and the Kings strip (see TrustPanel) in `.container.trust` immediately after the hero.
 
 ## Classes (`bundle.css`)
 - `.hero` is 96svh capped at 1040px with the text block vertically centered on the left (display headline fluid from 52px to 88px, lead on one line at up to 60ch) and `.hero-actions` positioned at the bottom center, 150px above the edge, so the trust panel sits beneath the pills. Below 768px the hero shrinks to its content, the text aligns to the bottom, and the pills stack full-width under the lead. `overflow: hidden` so the zoomed photo never shows past the overlay. `.hero::before` is the navy gradient (heavier on the left), `.hero::after` the bottom fade. The image is zoomed 6% and positioned at 60% 58%.
@@ -16,3 +16,6 @@ The full-bleed photo opener. The homepage uses `.hero` with the `display` headli
 - Don't put a dark photo under the gradient; the gradient assumes a mid-tone image.
 - Don't exceed two lines of headline on desktop or three on mobile.
 - Don't add a second overlay, a blur or a color grade.
+
+## Contrast over the photograph
+Overlay strength is an accessibility rule, not a mood setting. Every line of text over a photo was sampled against the real pixels and clears WCAG AA (4.5:1 for small text, 3:1 for large). Under 768px the hero overlay runs 74% to 68% to 88% navy top to bottom; from 768px to 1023px the dark side of the overlay reaches 48% across; `.page-head` and `.cta` stay at 76% navy or darker edge to edge under 1024px, and the `.cta` never drops below 72% on desktop. If you swap a photograph, re-check before lightening any of these.

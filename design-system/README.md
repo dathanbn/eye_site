@@ -73,3 +73,13 @@ Every component in this system is a piece of the live site, in the order a page 
 ## Social media
 
 See the Social section for the four formats and four templates for Instagram, Facebook, Google Business Profile and LinkedIn.
+
+## Accessibility
+The site is built to WCAG 2.1 AA and was scanned with axe-core on every page at phone, tablet and desktop widths with no violations (November 2026). The rules that keep it there:
+- Text is `ink`, `slate` or `mute` on light surfaces and `on-navy` or `mist` on navy; `mute` is the lightest text color allowed and never goes below 14px.
+- Text over a photograph always sits on a navy overlay strong enough to clear 4.5:1 against the real image (see Hero).
+- Links inside running text are underlined. Form controls use `control-border`, not `hairline`.
+- Every interactive element shows a focus ring: `blue` on light, white on navy and photographs.
+- Tap targets are at least 24px tall, and 44px or more for the primary actions and the call bar.
+- Decorative icons are `aria-hidden`; links that open a new tab say so to screen readers.
+- Motion is short and stops entirely under `prefers-reduced-motion`.
