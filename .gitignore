@@ -11,3 +11,7 @@ Thumbs.db
 
 # Throwaway prototypes served locally, never published
 site/_proto/
+
+# Other projects kept in this folder, not part of the website repo
+social-templates/
+Claude outputs/
