@@ -12,23 +12,33 @@
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  // Mobile sheet.
+  // Mobile sheet. While it is open the rest of the page is inert, so keyboard and
+  // screen-reader users stay inside the menu; the phone numbers stay reachable.
   if (toggle && sheet) {
-    toggle.addEventListener('click', function () {
-      var open = !sheet.classList.contains('is-open');
+    var behind = document.querySelectorAll('main, footer');
+    function setOpen(open) {
       sheet.classList.toggle('is-open', open);
+      if (nav) nav.classList.toggle('is-menu-open', open);
       toggle.setAttribute('aria-expanded', String(open));
-      document.body.style.overflow = open ? 'hidden' : '';
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       toggle.querySelector('.icon-menu').toggleAttribute('hidden', open);
       toggle.querySelector('.icon-close').toggleAttribute('hidden', !open);
-      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    });
+      document.body.style.overflow = open ? 'hidden' : '';
+      behind.forEach(function (el) { el.inert = open; });
+    }
+    toggle.addEventListener('click', function () { setOpen(!sheet.classList.contains('is-open')); });
     sheet.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { toggle.click(); });
+      a.addEventListener('click', function () { setOpen(false); });
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && sheet.classList.contains('is-open')) toggle.click();
+      if (e.key === 'Escape' && sheet.classList.contains('is-open')) { setOpen(false); toggle.focus(); }
     });
+    // Leaving the phone layout closes the menu so the page is never left locked.
+    if (window.matchMedia) {
+      var wide = window.matchMedia('(min-width: 1024px)');
+      var onWide = function () { if (wide.matches && sheet.classList.contains('is-open')) setOpen(false); };
+      if (wide.addEventListener) wide.addEventListener('change', onWide); else if (wide.addListener) wide.addListener(onWide);
+    }
   }
 
   // Appointment request form: validate on blur and submit, then show a confirmation.
@@ -52,6 +62,7 @@
     form.querySelectorAll('.control').forEach(function (f) {
       var help = f.closest('.field').querySelector('.help');
       if (help) help.setAttribute('data-default', help.textContent);
+      if (help && f.id) { help.id = f.id + '-help'; f.setAttribute('aria-describedby', help.id); }
       f.addEventListener('blur', function () { setError(f, validate(f)); });
     });
     form.addEventListener('submit', function (e) {
@@ -68,6 +79,7 @@
       var done = document.createElement('div');
       done.className = 'form-success';
       done.setAttribute('role', 'status');
+      done.setAttribute('tabindex', '-1');
       done.innerHTML = '<strong>Request received.</strong> Our ' + office + ' office will call you at ' + data.phone + ' within one business day to confirm a time.';
       form.replaceWith(done);
       done.focus();
